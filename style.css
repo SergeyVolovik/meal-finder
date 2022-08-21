@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #2d2013;
+    color: #fff;
+}
+
+p{
+    margin: 20px 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    margin: 20px 0;
+}
+
+.flex__container{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+input{
+
+    width: 300px;
+}
+input, button{
+    padding: 10px;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+.meals{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.error{
+    margin-bottom: 20px;
+}
+.meal{
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.meal img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    border-radius: 2px;
+}
+
+.meal-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+.meal:hover .meal-info{
+    opacity: 1;
+}
+
+h3{
+    font-size: 16px;
+}
+
+
+
+ 
